@@ -1,6 +1,8 @@
+package ex10;
 public class Dez {
 
     public static void main(String[] args) {
+
         Retangulo r1 = new Retangulo();
         r1.setBase(10);
         r1.setAltura(20);

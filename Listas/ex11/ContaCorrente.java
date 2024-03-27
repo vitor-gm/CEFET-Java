@@ -11,27 +11,19 @@ public class ContaCorrente {
     public void saque(Double valor){
 
         if(valor > 0) {
-            if(valor < saldo) {
-                saldo = saldo - valor;
+            if(valor <= saldo) {
+                this.saldo = saldo - valor;
             } else {
-                System.out.println("Saldo insuficiente!");
+                System.out.println("Saldo insuficiente! Saldo atual: " + this.saldo);
             }
-        }
-        /* if(valor > saldo)
-        if(saldo > 0){
-            saldo = saldo - valor;
-        }else if(valor > saldo){
-            this.saldo = 0.0;
-        } */
-            
+        }         
          
     }
-
     public void depositar(Double valor){
         if(valor < limite){
             setSaldo(saldo + valor);
         }else{
-            System.out.println("Limite atingido!");
+            System.out.println("Limite atingido!"); 
         }
     }
 

@@ -1,3 +1,4 @@
+package ex10;
 public class Retangulo {
     private int base;
     private int altura;
